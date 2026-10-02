@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Request and Response</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            margin: 30px;
+            padding: 25px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .codebox {
+            background-color: #eee;
+            padding: 15px;
+            font-family: monospace;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>HTTP Request & Response</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="box">
+            <h2>What is HTTP?</h2>
+
+            <p>
+                HTTP stands for <b>HyperText Transfer Protocol</b>.
+            </p>
+
+            <p>
+                It is used for communication between a web browser
+                and a web server.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>HTTP Request</h2>
+
+            <p>
+                A request is sent by the client (browser) to the server
+                when it wants a resource.
+            </p>
+
+            <h3>Main Parts</h3>
+
+            <ul>
+                <li><b>Request Line:</b> Contains method, URI and HTTP version.</li>
+                <li><b>Headers:</b> Provide additional information.</li>
+                <li><b>Body:</b> Contains data when required.</li>
+            </ul>
+
+            <h3>Common Methods</h3>
+
+            <ul>
+                <li>GET</li>
+                <li>POST</li>
+                <li>PUT</li>
+                <li>DELETE</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>HTTP Response</h2>
+
+            <p>
+                The server sends a response back to the client after
+                processing the request.
+            </p>
+
+            <h3>Main Parts</h3>
+
+            <ul>
+                <li><b>Status Line:</b> Contains the HTTP version and status code.</li>
+                <li><b>Headers:</b> Provide information about the response.</li>
+                <li><b>Body:</b> Contains the requested content or data.</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Important Headers</h2>
+
+            <p><b>Request Headers:</b></p>
+
+            <ul>
+                <li>Host</li>
+                <li>User-Agent</li>
+                <li>Accept</li>
+            </ul>
+
+            <p><b>Response Headers:</b></p>
+
+            <ul>
+                <li>Content-Type</li>
+                <li>Set-Cookie</li>
+                <li>Cache-Control</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>HTTP Communication</h2>
+
+            <img src="C:\Users\Khush\Pictures\Screenshots\Screenshot 2026-10-02 135010.png" alt="Http request response cycle">
+        </div>
+
+        <div class="box">
+            <h2>HTTP Lifecycle</h2>
+
+            <ol>
+                <li>DNS Resolution</li>
+                <li>TCP Connection</li>
+                <li>HTTP Request</li>
+                <li>HTTP Response</li>
+                <li>Connection Teardown / Keep-Alive</li>
+            </ol>
+        </div>
+
+        <p>
+            <a href="Homepage.html"> Back to Home</a>
+        </p>
+
+    </div>
+
+</body>
+</html>

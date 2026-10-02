@@ -1,76 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to WWW</title>
+    <title>Internet vs WWW</title>
+
     <style>
-        .container {
-            width: 1300px;
-            background-color: rgb(255, 254, 247);
-            padding: 10px;
-            display: block;
-            margin: auto;
-            border-radius: 14px;
-        }
         body {
-            background-color: antiquewhite;
-
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 0;
         }
-        .parent {
-            display: flex;
-            gap: 20px;
 
-        }
-        .left-div, .right-div {
-            width: 50%;
+        .header {
+            background-color: #222;
+            color: white;
+            text-align: center;
             padding: 20px;
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 14px;
         }
-        .summary {
-            width: 800px;
+
+        .content {
             background-color: white;
-            border: 1px solid navy;
-            border-radius: 14px;
-            display: block;
-            margin: auto;
+            margin: 30px;
+            padding: 25px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
             padding: 15px;
+            margin: 15px 0;
         }
-        
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        a {
+            color: blue;
+        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1 style="text-align: center;">Introduction to World Wide Web</h1>
-        <div class="parent">
-        <div class="left-div">
-            <h2>System of interconnected pages</h2>
-            <p>The World Wide Web (WWW), often called the Web, is a system of interconnected web pages and information that you can access using the Internet. It was created to help people share and find information easily, using links that connect different pages together.</p>
-        </div>
-        <div class="right-div">
-            <h2>Key Characteristics</h2>
-            <p><b>Global Interaction:</b>Allows users to browse websites, watch videos, shop online, and connect with others worldwide.</p>
-            <p><b>The W3 Pool:</b>All public websites accessible through the internet on any local device are collectively known as W3.</p>
-            <p><b>Hyperlink Navigation: </b> Users discover further information by navigating interlinked pages and documents.</p>
-            <p><b>Rich Formats: </b> Information is represented in diverse text, picture, audio, or video formats.</p>
-        </div>
-        </div> <br><br>
-        <div class="summary">
-            <h2 style="text-align: center;">Summary</h2>
-            <h4>
-                WWW is a system of interconnected web pages and information accessed through the Internet.<br>
-                It helps people share, find, and access information using hyperlinks.<br>
-                Global interaction: Users can browse websites, watch videos, shop, and communicate wordlwide.<br>
-                Hyperlink navigation: Links connect different web pages and documents.<br>
-                Rich formats: Information can include text, images, audio, and video.<br>
-                W3: Refers to the collection of publicly accessible websites on the Internet.<br>
-                Global connectivity: The Web connects over 63% of the world's population.
 
-            </h4>
-        </div>
-        <h4 style="text-align: center;"><a href="file:///D:/College/COLLEGE%20PROJECTS/ITM-Web-Tech/WEB%20TECH%20UNITS/Unit-1/Homepage.html" title="Go back to home page">Go back to Home page</a></h4>
+<body>
+
+    <div class="header">
+        <h1>Internet vs World Wide Web</h1>
     </div>
+
+    <div class="content">
+
+        <div class="box">
+            <h2>Internet</h2>
+
+            <p>
+                The Internet is a global network of interconnected
+                computers and devices.
+            </p>
+
+            <p>
+                It provides the infrastructure on which services such
+                as the WWW operate.
+            </p>
+        </div>
+
+        <div class="box">
+            <h2>World Wide Web</h2>
+
+            <p>
+                The WWW is a system of interconnected web pages and
+                resources that operates on top of the Internet.
+            </p>
+
+            <p>
+                It uses technologies such as HTTP, URLs and hyperlinks
+                to access and connect web resources.
+            </p>
+        </div>
+
+        <h2>Difference</h2>
+
+        <table>
+            <tr>
+                <th>Internet</th>
+                <th>WWW</th>
+            </tr>
+
+            <tr>
+                <td>Global network infrastructure</td>
+                <td>System of web pages and resources</td>
+            </tr>
+
+            <tr>
+                <td>Uses TCP/IP for communication</td>
+                <td>Uses technologies such as HTTP and URLs</td>
+            </tr>
+
+            <tr>
+                <td>Includes many services</td>
+                <td>One service that operates on the Internet</td>
+            </tr>
+
+            <tr>
+                <td>Provides the network infrastructure</td>
+                <td>Provides access to web information</td>
+            </tr>
+        </table>
+
+        <div class="box">
+            <h2>Easy Example</h2>
+
+            <p>
+                <b>Internet = Roads</b>
+            </p>
+
+            <p>
+                <b>WWW = Vehicles and traffic using those roads</b>
+            </p>
+        </div>
+
+        <p>
+            <a href="Homepage.html"> Back to Home</a>
+        </p>
+
+    </div>
+
 </body>
 </html>
