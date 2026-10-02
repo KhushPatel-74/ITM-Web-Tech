@@ -1,0 +1,17 @@
+# Editor settings
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Word temp/lock files
+~$*
+
+# Dependencies
+node_modules/
+
+# Archives
+*.zip
