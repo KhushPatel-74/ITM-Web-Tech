@@ -1,5 +1,7 @@
 # Web Technologies Practicals
 
+## Numbered practicals
+
 | No. | Folder | Topic | Main file |
 |-----|--------|-------|-----------|
 | 1 | [practical-01](practical-01/) | First HTML page | `1st Practical.html` |
@@ -12,11 +14,17 @@
 
 ## Extra work
 
-| Folder / File | What it is |
-|---------------|------------|
-| [index-page](index-page/) | Index page with its own `style.css` |
+| Folder | What it is |
+|--------|------------|
+| [html-tags](html-tags/) | HTML tags demo page with its own `style.css` |
 | [portfolio-site](portfolio-site/) | Portfolio page styled with an external `style.css` |
-| `survey.html` | Standalone survey page |
+
+## Course documents
+
+| File | What it is |
+|------|------------|
+| `Name manual WT.docx` / `.pdf` | Practical manual |
+| `Web Technologies Blue_Print.docx` | Course blueprint |
 
 ## Reports
 

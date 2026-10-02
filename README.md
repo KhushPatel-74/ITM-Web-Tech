@@ -9,15 +9,18 @@ Practicals and unit notes for the **Web Technologies** course.
 
 ```
 ITM-Web-Tech/
-├── practicals/     # Practical work (HTML/CSS), with write-ups as .docx and .pdf
+├── practicals/       # Practical work (HTML/CSS) with reports as .docx and .pdf
 │   ├── practical-01/ ... practical-07/
-│   ├── index-page/
+│   ├── html-tags/
 │   └── portfolio-site/
-└── units/          # Unit-wise notes and sample pages
-    └── unit-1/     # Introduction to the World Wide Web
+└── unit-notes/       # Unit-wise notes and sample pages
+    └── Unit-1/       # Introduction to the World Wide Web
 ```
 
-See [`practicals/README.md`](practicals/README.md) for the full list of practicals.
+| Folder | What it has | Details |
+|--------|-------------|---------|
+| [`practicals/`](practicals/) | 7 numbered practicals plus two extra mini-projects | [practicals/README.md](practicals/README.md) |
+| [`unit-notes/`](unit-notes/) | Unit notes (PDF) and demo pages | [unit-notes/README.md](unit-notes/README.md) |
 
 ## How to view the pages
 
@@ -35,4 +38,4 @@ See [`practicals/README.md`](practicals/README.md) for the full list of practica
 
 ## Notes
 
-Each practical folder contains the source code (`.html`/`.css`), the written report (`.docx` / `.pdf`) and screenshots of the output where available.
+Each practical folder contains the source code (`.html` / `.css`), the written report (`.docx` / `.pdf`) and screenshots of the output where available.
