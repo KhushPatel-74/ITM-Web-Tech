@@ -1,0 +1,126 @@
+<DOCTYPE HTML>
+    <html>
+        <head>
+            <title>School Bookstore Survey</title>
+            <style>
+               body{
+                background-color: #f4efe6;
+               }
+               div{
+                background-color: white;
+                width: 700px;
+                padding: 25px;
+                margin: auto;
+                input[type="submit"] {
+                    background-color: #5b3a29;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    margin: auto;
+                    display: block;
+                }
+                input[type="reset"] {
+                    background-color: #5b3a29;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    margin: auto;
+                    display: block;
+                }
+                input[type="text"] ,
+                input[type="email"] ,
+                input[type="text"] ,
+                textarea {
+                    width: 300px;
+                   
+                }
+                h1{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    border-bottom: 3px solid black ;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 style="text-align: center;">Student Bookstore Survey</h1>
+                <h2 style="text-align: center;">Student INFO : </h2>
+                <form>
+                    <fieldset>
+                        Name :
+                        <input type="text" placeholder="Enter your name" required>
+                        <br><br>
+                        Email :
+                        <input type="email" placeholder="example@gmail.com" required>
+                        <br><br>
+                        City :
+                        <input type="text" placeholder="Enter your city" required>
+                        <br><br>
+                        Address :
+                        <br>
+                        <textarea rows="4" cols="40"></textarea>
+                        
+                        
+                    </fieldset>
+                    <br>
+                    <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Student Survey</h2>
+                    <fieldset>
+                        How often do you purchase books?
+                        <br>
+                        <input type="radio" name="frequency" value="frequently">Frequently
+                        <br>
+                        <input type="radio" name="frequency" value="occasionaly">Ocassionaly
+                        <br>
+                        <input type="radio" name="frequency" value="rarely">Rarely
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        Where do you usually purchase books?
+                        <br>
+                        <input type="checkbox" name="store" value="school bookstore"> School Bookstore
+                        <br>
+                        <input type="checkbox" name="store" value="local store">Local bookstore
+                        <br>
+                        <input type="checkbox" name="store" value="online">Online store
+                        <br><br>
+                        Other :
+                        <input type="text" placeholder="Other Bookstores">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        How much do you usually spend on books per month?
+                        <br>
+                        <input type="radio" name="price" value="below500">Below ₹500
+                        <br>
+                        <input type="radio" name="price" value="500-1000">₹500-₹1000
+                        <br>
+                        <input type="radio" name="price" value="1000-2000">₹1000-₹2000
+                        <br>
+                        <input type="radio" name="price" value="above2000">Above ₹2000
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        How satisfied are you with Online Bookstores?
+                        <br>
+                        <input type="radio" name="satisfied" value="very satisfied">Very Satisfied
+                        <br>
+                        <input type="radio" name="satisfied" value="satisfied">Satisfied
+                        <br>
+                        <input type="radio" name="satisfied" value="neutral">Neutral
+                        <br>
+                        <input type="radio" name="satisfied" value="unsatisfied">Unsatisfied
+                        <br>
+                        <input type="radio" name="satisfied" value="very unsatisfied">Very Unsatisfied
+                    </fieldset>
+                    <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Thanks for giving our survey!</h2>
+                    <br>
+                    <input type="submit" value="Submit survey">
+                    <br>
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </body>
+    </html>
+</DOCTYPE>

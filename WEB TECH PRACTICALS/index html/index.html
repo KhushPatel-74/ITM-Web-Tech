@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual showcase of standard HTML tags">
+  <meta name="author" content="Student">
+  <title>HTML Tags Visual Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <h1>HTML & Modern Elements Showcase</h1>
+    <p>A live visual reference covering essential tags before applying CSS.</p>
+    <nav>
+      <a href="#typography">Typography</a> |
+      <a href="#lists-tables">Lists & Tables</a> |
+      <a href="#multimedia">Media</a> |
+      <a href="#forms">Forms</a> |
+      <a href="https://itmbu.ac.in" target="_blank" title="Go to ITMBU Portal">ITMBU Link</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <!-- Section 1: Headings & Formatting -->
+    <section id="typography">
+      <h2>1. Headings & Text Formatting</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <h6>Heading Level 6</h6>
+
+      <p>
+        Standard paragraph with <b>bold physical text</b>, <strong>strong semantic text</strong>, 
+        <i>italic text</i>, and <em>emphasized text</em>.
+      </p>
+
+      <p>
+        Editorial marks: <del>deleted/outdated text</del> and <ins>inserted text</ins>. 
+        Highlighting: <mark>marked keyword</mark>. Fine print: <small>small disclaimer text</small>.
+      </p>
+
+      <p>
+        Scientific notations: Water is H<sub>2</sub>O (subscript) and math exponents: x<sup>2</sup> + y<sup>2</sup> (superscript).
+      </p>
+
+      <p>
+        Text direction override: <bdo dir="rtl">This line renders right-to-left</bdo>
+      </p>
+
+      <p>
+        Inline quotes: WWF objective is <q>Build a future where people live in harmony with nature.</q>
+      </p>
+
+      <blockquote cite="https://www.w3.org">
+        This is a blockquote element. Browsers automatically indent its left and right margins to separate it from surrounding text blocks.
+      </blockquote>
+
+      <p>Abbreviations: The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+      <p>Creative work title: <cite>The Scream</cite> by Edvard Munch.</p>
+
+      <p>Manual line breaks inside one block:<br>First row<br>Second row</p>
+
+      <pre>
+  Preformatted Text (&lt;pre&gt;):
+    Keeps    exact
+      spaces  and
+    line breaks!
+      </pre>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Lists & Tables -->
+    <section id="lists-tables">
+      <h2>2. Lists & Tabular Data</h2>
+
+      <h3>Unordered List (&lt;ul&gt;)</h3>
+      <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+
+      <h3>Ordered List (&lt;ol&gt;)</h3>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+      <h3>Description List (&lt;dl&gt;)</h3>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- White cold drink</dd>
+      </dl>
+
+      <h3>Data Table (&lt;table&gt;)</h3>
+      <table border="1">
+        <caption>Student Records</caption>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">End of active listings</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Media & Interactive -->
+    <section id="multimedia">
+      <h2>3. Media & Links</h2>
+
+      <p>Clickable image link:</p>
+      <a href="https://itmbu.ac.in" target="_blank">
+        <img src="https://via.placeholder.com/120x60" alt="Placeholder preview badge" width="120" height="60">
+      </a>
+
+      <p>Direct action links: <a href="mailto:test@example.com">Send an Email</a></p>
+
+      <h3>Native Audio</h3>
+      <audio controls>
+        <source src="podcast.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Native Video</h3>
+      <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Draggable API Item</h3>
+      <p draggable="true" style="border: 1px dashed gray; padding: 8px; width: fit-content;">
+        Drag me around! (Uses draggable="true")
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- Section 4: Comprehensive Forms -->
+    <section id="forms">
+      <h2>4. HTML5 Forms & Inputs</h2>
+      <form action="/action_page.php" method="post">
+        
+        <p>
+          <label for="fname">Text Input (First Name):</label><br>
+          <input type="text" id="fname" name="fname" value="John">
+        </p>
+
+        <p>
+          <label for="user-email">Email Input:</label><br>
+          <input type="email" id="user-email" name="email" placeholder="name@domain.com">
+        </p>
+
+        <p>
+          <label for="user-number">Number Stepper:</label><br>
+          <input type="number" id="user-number" name="quantity" min="1" max="10" value="1">
+        </p>
+
+        <p>
+          <label for="birthday">Date Picker:</label><br>
+          <input type="date" id="birthday" name="birthday">
+        </p>
+
+        <p>
+          <label for="favcolor">Color Picker:</label><br>
+          <input type="color" id="favcolor" name="favcolor" value="#ff6347">
+        </p>
+
+        <p>
+          <label for="slider">Range Slider:</label><br>
+          <input type="range" id="slider" name="score" min="0" max="100">
+        </p>
+
+        <p>Radio Options (Choose one):<br>
+          <input type="radio" id="html-opt" name="fav_tech" value="HTML" checked>
+          <label for="html-opt">HTML</label><br>
+          <input type="radio" id="css-opt" name="fav_tech" value="CSS">
+          <label for="css-opt">CSS</label>
+        </p>
+
+        <p>Checkboxes (Choose multiple):<br>
+          <input type="checkbox" id="vehicle1" name="v1" value="Bike">
+          <label for="vehicle1">I have a bike</label><br>
+          <input type="checkbox" id="vehicle2" name="v2" value="Car">
+          <label for="vehicle2">I have a car</label>
+        </p>
+
+        <input type="submit" value="Submit Form">
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <aside>
+    <h3>Related Info</h3>
+    <p>Use developer tools (<kbd>Ctrl + Shift + I</kbd> or right-click &rarr; Inspect) to examine tag defaults before applying custom styles.</p>
+  </aside>
+
+  <!-- Semantic Footer -->
+  <footer>
+    <address>
+      Created for practice.<br>
+      Contact author at <a href="mailto:dev@example.com">dev@example.com</a>.<br>
+      Vadodara, Gujarat
+    </address>
+    <p><small>&copy; 2026 Web Development Foundation. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bookstore Survey</title>
+    <style>
+       h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       body {
+        background-color: rgba(255, 239, 190, 0.484);
+       }
+       h2 {
+        border-bottom: 3px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       div {
+        background-color: white;
+        width: 700px;
+        padding: 35px;
+        margin: auto;
+       }
+       input[type="submit"] {
+       background-color: rgb(159, 96, 32);
+       color: white;
+       border: none;
+       border-radius: 15px;
+       padding: 15px;
+       display: block;
+       margin: auto;
+       width: 120px;
+       
+       }
+       input[type="reset"] {
+       background-color: rgb(159, 96, 32);
+       color: white;
+       border: none;
+       border-radius: 15px;
+       padding: 10px;
+       display: block;
+       margin: auto;
+       width: 100px;
+       }
+       .foot {
+        font-size: large;
+        font-family: sans-serif;
+
+       }
+       .endtext {
+        color: darkgrey;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Student Bookstore Survey!</h1>
+        <h2 style="text-align: center;">Student Info. FORM</h2>
+        <form>
+            <fieldset>
+                Name:
+                <input type="text" placeholder="Type in your name" required>
+                <br><br>
+                City :
+                <input type="text" placeholder="Enter your city" required>
+                <br><br>
+                Email :
+                <input type="email" placeholder="example@email.com" required>
+                <br><br>
+                Phone Number :
+                <input type="tel" placeholder="Enter your Number" required>
+                <br><br>
+                Pincode :
+                <input type="number" placeholder="Enter your city Pincode" required>
+                <br><br>
+                Address :
+                <br>
+                <textarea rows="4" cols="40"></textarea>
+            </fieldset>
+            <h2 style="text-align: center;">Survey</h2>
+            <fieldset>
+                How often do you purchase books?
+                <br><br>
+                <input type="radio" name="often" value="rarely">Rarely
+                <br><br>
+                <input type="radio" name="often" value="occasionaly">Occasionaly
+                <br><br>
+                <input type="radio" name="often" value="frequently">Frequently
+                <br><br>
+            </fieldset><br>
+            <fieldset>
+                Where do you usually purchase Bookstores?
+                <br><br>
+                <input type="checkbox" name="store" value="online">Online Bookstore<br><br>
+                <input type="checkbox" name="store" value="offline">Offline Bookstore<br><br>
+                <input type="checkbox" name="store" value="college">College bookstore<br><br>
+                Other :<br>
+                <input type="text" placeholder="Other Bookstore">
+            </fieldset>
+            <br>
+            <fieldset>
+                 Which books do you think changed your life?
+                 <input type="text" placeholder="Book name" required> <br><br>
+                 What are the books that you would recommend to a Beginner?
+                 <input type="text" placeholder="Book name" required><br><br>
+                 Which Book you like the most to read during your free time?
+                 <input type="text" placeholder="Book name" required>
+                 
+            </fieldset><br>
+
+            <fieldset>
+                 How much usually you spend on books per month?<br><br>
+                 <input type="radio" name="price" value="100-500">₹100-₹500
+                 <br><br>
+                 <input type="radio" name="price" value="500-1000">₹500-₹1000
+                 <br><br>
+                 <input type="radio" name="price" value="1000-2000">₹1000-₹2000
+                 <br><br>
+                 <input type="radio" name="price" value="above2000">More than ₹2000
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit survey">
+            <br>
+            <input type="reset" value="Reset">
+            <h2 style="text-align: center;">Thank you for giving the survey!</h2>
+        </form>
+        <h1 style="text-align: center;">Other helpful links</h1><br>
+        <ul>
+        <li><p class="foot"><b>If you want to check my portfolio,</b><a href="file:///C:/Users/Khush/Documents/COLLEGE%20PROJECTS/WEB%20TECH%20PRACTICALS/2ND%20PRACTICAL%20html/portfollio.html" target="_blank"> Here's the link.</a></p></li>
+        <li><p class="foot"><b>To join a Food drive community association, </b><a href="file:///C:/Users/Khush/Documents/COLLEGE%20PROJECTS/WEB%20TECH%20PRACTICALS/3RD%20PRACTICAL%20html/fooddrive.html" target="_blank"> Follow this link.</a></p></li>
+        <li><p class="foot"><b>My Branch major full detailed info --></b><a href="file:///C:/Users/Khush/Documents/COLLEGE%20PROJECTS/WEB%20TECH%20PRACTICALS/5TH%20PRACTICAL/Home%20page.html" target="_blank">Here</a></p></li>
+
+        </ul><br><br>
+        <h5 class="endtext" style="text-align: center;">Website made by Khush Patel in practice with css</h5>
+    </div>
+</body>
+</html>
