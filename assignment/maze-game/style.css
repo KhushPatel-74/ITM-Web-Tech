@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #080b18;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospacex;
+}
+.start-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    font-size: 48px;
+    letter-spacing: 4.8px;
+    color: #00f0ff;
+    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
+
+}
+.arcade-label {
+    font-size: 0.9rem;
+    letter-spacing: 0.4rem;
+    color: #ff2bd6;
+    margin-bottom: 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: #b8c0ff;
+    margin-top: 0.5rem;
+}
+
+.menu h2 {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.high-score {
+    margin-top: 2rem;
+    color: #ffe600;
+    letter-spacing: 0.2rem;
+}
+button {
+    font-family: "Courier New", monospace;
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: #39ff14;
+    border: 3px solid #39ff14;
+    cursor: pointer;
+    box-shadow: 0 0 10px #39ff14;
+}
+
+button:hover {
+    background: #39ff14;
+    color: #080b18;
+    box-shadow: 0 0 25px #39ff14;
+}
