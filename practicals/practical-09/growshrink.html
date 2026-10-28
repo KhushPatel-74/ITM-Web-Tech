@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Growing and Shrinking</title>
+    <link rel="stylesheet" href="growshrink.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Text Growing and Shrinking</h1>
+
+        <div class="stage">
+            <span id="sample">Hello, I am Khush!</span>
+        </div>
+
+        <p class="info" id="info">Font size: 24px</p>
+        <div class="meter"><div class="fill" id="fill"></div></div>
+
+        <div class="controls">
+            <button type="button" class="btn-grow" onclick="grow()">Grow</button>
+            <button type="button" class="btn-shrink" onclick="shrink()">Shrink</button>
+            <button type="button" class="btn-reset" onclick="resetSize()">Reset</button>
+            <button type="button" class="btn-auto" id="autoBtn" onclick="toggleAuto()">Start Auto</button>
+        </div>
+
+    </div>
+
+    <script>
+        var START = 24;
+        var MIN = 10;
+        var MAX = 60;
+        var size = START;
+        var timer = null;
+        var direction = 1;
+
+        function show() {
+            document.getElementById("sample").style.fontSize = size + "px";
+            document.getElementById("info").innerHTML = "Font size: " + size + "px";
+            var percent = ((size - MIN) / (MAX - MIN)) * 100;
+            document.getElementById("fill").style.width = percent + "%";
+        }
+
+        function grow() {
+            if (size < MAX) {
+                size = size + 2;
+                show();
+            }
+        }
+
+        function shrink() {
+            if (size > MIN) {
+                size = size - 2;
+                show();
+            }
+        }
+
+        function resetSize() {
+            size = START;
+            show();
+        }
+
+        function toggleAuto() {
+            var btn = document.getElementById("autoBtn");
+            if (timer === null) {
+                timer = setInterval(function () {
+                    size = size + direction * 2;
+                    if (size >= MAX) { size = MAX; direction = -1; }
+                    if (size <= MIN) { size = MIN; direction = 1; }
+                    show();
+                }, 80);
+                btn.innerHTML = "Stop Auto";
+            } else {
+                clearInterval(timer);
+                timer = null;
+                btn.innerHTML = "Start Auto";
+            }
+        }
+
+        show();
+    </script>
+</body>
+</html>

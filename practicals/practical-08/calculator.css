@@ -1,0 +1,138 @@
+:root {
+    --navy: #14213d;
+    --teal: #2ec4b6;
+    --sand: #fdf6e3;
+    --amber: #ffb703;
+    --screen: #0b132b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg, #14213d, #1f3a5f);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc {
+    width: 100%;
+    max-width: 460px;
+    background-color: var(--sand);
+    border-top: 8px solid var(--amber);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--navy);
+    margin: 0 0 4px 0;
+}
+
+.sub {
+    text-align: center;
+    color: #5c677d;
+    margin: 0 0 20px 0;
+}
+
+.fields {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--navy);
+}
+
+input[type="number"] {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #b8c1cc;
+    border-radius: 10px;
+}
+
+input[type="number"]:hover {
+    border-color: var(--navy);
+}
+
+input[type="number"]:focus {
+    border-color: var(--teal);
+    outline: none;
+}
+
+.ops {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.ops button {
+    background-color: var(--navy);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.ops button:hover {
+    background-color: var(--teal);
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+
+.ops button.clear {
+    background-color: var(--amber);
+    color: var(--navy);
+}
+
+.ops button.clear:hover {
+    background-color: #ffd166;
+}
+
+.screen {
+    background-color: var(--screen);
+    color: var(--teal);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    text-align: right;
+    min-height: 72px;
+    margin-top: 18px;
+    padding: 18px;
+    border-radius: 12px;
+    word-wrap: break-word;
+}
+
+.screen.error {
+    color: #ff6b6b;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    .calc {
+        padding: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ops button,
+    .ops button:hover {
+        transition: none;
+        transform: none;
+    }
+}

@@ -1,0 +1,137 @@
+:root {
+    --plum: #3d1e6d;
+    --flame: #c8441f;
+    --cream: #fff3e0;
+    --mint: #1f7a6f;
+    --slate: #5b6370;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3d1e6d, #c8441f);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--plum);
+    margin: 0 0 20px 0;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: var(--cream);
+    border: 3px dashed var(--flame);
+    border-radius: 14px;
+}
+
+#sample {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--plum);
+    transition: font-size 0.15s;
+}
+
+.info {
+    text-align: center;
+    font-weight: bold;
+    color: var(--plum);
+    margin: 16px 0 8px 0;
+}
+
+.meter {
+    height: 12px;
+    background-color: #eadcf8;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.fill {
+    height: 100%;
+    width: 28%;
+    background: linear-gradient(90deg, #3d1e6d, #c8441f);
+    transition: width 0.15s;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.controls button:hover {
+    transform: translateY(-2px);
+}
+
+.btn-grow {
+    background-color: var(--mint);
+}
+
+.btn-shrink {
+    background-color: var(--flame);
+}
+
+.btn-reset {
+    background-color: var(--slate);
+}
+
+.btn-auto {
+    background-color: var(--plum);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+    .stage {
+        height: 160px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #sample,
+    .fill,
+    .controls button,
+    .controls button:hover {
+        transition: none;
+        transform: none;
+    }
+}
