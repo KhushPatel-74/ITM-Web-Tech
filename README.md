@@ -11,8 +11,8 @@ Practicals, unit notes and the course assignment for the **Web Technologies** su
 ITM-Web-Tech/
 ├── assignment/       # Course assignment: a browser game built with HTML, CSS and JavaScript
 │   └── maze-game/
-├── practicals/       # Practical work (HTML/CSS) with reports as .docx and .pdf
-│   ├── practical-01/ ... practical-07/
+├── practicals/       # Practical work (HTML, CSS, JavaScript) with reports as .docx and .pdf
+│   ├── practical-01/ ... practical-10/
 │   ├── html-tags/
 │   └── portfolio-site/
 └── unit-notes/       # Unit-wise notes and sample pages
@@ -22,7 +22,7 @@ ITM-Web-Tech/
 | Folder | What it has | Details |
 |--------|-------------|---------|
 | [`assignment/`](assignment/) | The web game assignment (maze game) | [assignment/README.md](assignment/README.md) |
-| [`practicals/`](practicals/) | 7 numbered practicals plus two extra mini-projects | [practicals/README.md](practicals/README.md) |
+| [`practicals/`](practicals/) | 10 numbered practicals plus two extra mini-projects | [practicals/README.md](practicals/README.md) |
 | [`unit-notes/`](unit-notes/) | Unit notes (PDF) and demo pages | [unit-notes/README.md](unit-notes/README.md) |
 
 ## How to view the pages
@@ -42,4 +42,4 @@ ITM-Web-Tech/
 
 ## Notes
 
-Each practical folder contains the source code (`.html` / `.css`), the written report (`.docx` / `.pdf`) and screenshots of the output where available.
+Each practical folder contains the source code (`.html` / `.css` / `.js`), the written report (`.docx` / `.pdf`) and screenshots of the output where available.
