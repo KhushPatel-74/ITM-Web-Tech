@@ -1,0 +1,70 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #04050c;
+    color: #eef1fa;
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+}
+.bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 6vw;
+    background: rgba(4, 5, 12, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+}
+.logo {
+    font-family: "Newsreader", Georgia, sans-serif;
+    font-style: italic;
+    font-size: 26px;
+    color: #eef1fa;
+    text-decoration: none;
+}
+nav a {
+    margin: 0 4px;
+    padding: 4px 12px;
+    color: #a9b2ca;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+
+}
+nav a:hover {
+    color: #eef1fa;
+    background: rgba(255, 255, 255, 0.08);
+
+}
+.sec {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 6vw;
+
+}
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6vw;
+}
+h1 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(68px, 13vw, 170px);
+  line-height: 0.9;
+}
+
+h2 {
+  font-family: "Newsreader", Georgia, serif;
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 14px;
+}
