@@ -50,10 +50,15 @@ nav a:hover {
 
 }
 .hero {
+    position: relative;
+    overflow: hidden;
+    max-width: 1180px;
+    margin: 0 auto;
     min-height: 90vh;
     display: flex;
     align-items: center;
     padding: 0 6vw;
+    
 }
 h1 {
   font-family: "Newsreader", Georgia, serif;
@@ -67,4 +72,81 @@ h2 {
   font-weight: 500;
   font-size: 48px;
   margin-bottom: 14px;
+}  
+.heroText {
+  position: relative;
+  z-index: 2;
+  
+}
+
+.quasar {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: min(40vw, 460px);
+  height: min(40vw, 460px);
+  transform: translateY(-50%) rotate(calc(-24deg + var(--r, 0deg)));
+  transition: transform 0.5s ease;
+}
+
+.quasar i {
+  position: absolute;
+  display: block;
+}
+
+.core {
+  left: 50%;
+  top: 50%;
+  width: 65px;
+  height: 65px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #fff 28%, #f0b04a 52%, transparent 74%);
+  box-shadow: 0 0 50px 18px #f0b04a, 0 0 150px 60px rgba(63, 184, 175, 0.3);
+  animation: pulse 4s ease-in-out infinite alternate;
+
+}
+
+.disc {
+  left: 50%;
+  top: 50%;
+  width: 96%;
+  height: 18%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255, 250, 235, 0.95) 0%, #f0b04a 18%, rgba(200, 85, 61, 0.4) 46%, transparent 72%);
+  animation: breathe 6s ease-in-out infinite alternate;
+
+}
+
+.jet {
+  left: 50%;
+  width: 4.5%;
+  height: 54%;
+  border-radius: 50%;
+  filter: blur(5px);
+  transform: translateX(-50%);
+  animation: flicker 3s ease-in-out infinite alternate;
+}
+
+.jet.up {
+  bottom: 50%;
+  background: linear-gradient(to top, #4fd1c5, transparent);
+}
+
+.jet.down {
+  top: 50%;
+  background: linear-gradient(to bottom, #4fd1c5, transparent);
+} 
+@keyframes pulse {
+  to { transform: translate(-50%, -50%) scale(1.15); }
+}
+
+@keyframes breathe {
+  to { transform: translate(-50%, -50%) scaleX(1.06) scaleY(0.85); }
+}
+
+@keyframes flicker {
+  from { opacity: 0.5; }
+  to   { opacity: 0.95; }
 }
