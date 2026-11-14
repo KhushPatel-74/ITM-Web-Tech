@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Match | Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Memory Match</a>
+    <nav>
+      <a class="btn ghost" href="index.html">Main Menu</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Score board: filled in by script.js -->
+    <section class="scoreboard" aria-label="Score board">
+      <div class="stat"><small>Moves</small><strong id="moves">0</strong></div>
+      <div class="stat"><small>Matches</small><strong id="matches">0 / 8</strong></div>
+      <div class="stat"><small>Time</small><strong id="time">0s</strong></div>
+      <div class="stat"><small>Best</small><strong id="best">-</strong></div>
+    </section>
+
+    <!-- The board: script.js creates the 16 cards here -->
+    <section class="board" id="board" aria-label="Game board"></section>
+
+    <div class="actions">
+      <button class="btn" id="restart">Restart</button>
+    </div>
+  </main>
+
+  <!-- Win message (hidden until the player wins) -->
+  <div class="overlay" id="overlay">
+    <div class="win-box">
+      <h2>You won! 🎉</h2>
+      <p id="win-text"></p>
+      <button class="btn" id="play-again">Play Again</button>
+      <a class="btn ghost" href="index.html">Main Menu</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Click two cards to find a pair</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

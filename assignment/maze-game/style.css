@@ -1,65 +1,311 @@
+/* =========================================================
+   MEMORY MATCH - style.css (shared by index.html and game.html)
+   ========================================================= */
+
+/* 1. CSS VARIABLES: change the theme from one place */
+:root {
+  --bg: #1b1033;
+  --panel: #2a1a4d;
+  --accent: #ffd23f;
+  --card-back: #ff5d73;
+  --card-front: #fff4e0;
+  --text: #f6f0ff;
+  --radius: 14px;
+}
+
+/* 2. RESET + BASE */
 * {
-    box-sizing: border-box;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: #080b18;
-    color: #ffffff;
-    font-family: 'Courier New', Courier, monospacex;
-}
-.start-screen {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-h1 {
-    font-size: 48px;
-    letter-spacing: 4.8px;
-    color: #00f0ff;
-    text-shadow: 0 0 5px #00f0ff, 0 0 10px #00f0ff;
-
-}
-.arcade-label {
-    font-size: 0.9rem;
-    letter-spacing: 0.4rem;
-    color: #ff2bd6;
-    margin-bottom: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.tagline {
-    font-size: 1.1rem;
-    color: #b8c0ff;
-    margin-top: 0.5rem;
+/* 3. HEADER + FOOTER (Flexbox) */
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
 }
 
-.menu h2 {
-    font-size: 1.2rem;
-    margin-top: 2.5rem;
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.high-score {
-    margin-top: 2rem;
-    color: #ffe600;
-    letter-spacing: 0.2rem;
-}
-button {
-    font-family: "Courier New", monospace;
-    font-size: 1.3rem;
-    padding: 0.8rem 2rem;
-    background: transparent;
-    color: #39ff14;
-    border: 3px solid #39ff14;
-    cursor: pointer;
-    box-shadow: 0 0 10px #39ff14;
+footer {
+  justify-content: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
 
-button:hover {
-    background: #39ff14;
-    color: #080b18;
-    box-shadow: 0 0 25px #39ff14;
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* 4. BUTTONS (shared by links and <button>) */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #2b1b00;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 0 #b89300;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+.btn:focus-visible,
+.card:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   HOME PAGE (index.html)
+   ========================================================= */
+.hero {
+  text-align: center;
+  max-width: 640px;
+  margin: 30px auto;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 8vw, 4rem); /* responsive font size */
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 26px;
+  opacity: 0.9;
+}
+
+/* Floating preview cards on the menu */
+.preview {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.preview span {
+  width: 64px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: var(--card-front);
+  border-radius: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.preview span:nth-child(even) {
+  background: var(--card-back);
+  animation-delay: 0.5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-12px) rotate(4deg); }
+}
+
+/* How to play box */
+.rules {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 20px 26px;
+}
+
+.rules h2 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.rules ol {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   GAME PAGE (game.html)
+   ========================================================= */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 8px 20px;
+  text-align: center;
+  min-width: 90px;
+}
+
+.stat small {
+  display: block;
+  opacity: 0.7;
+}
+
+.stat strong {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+/* The board: CSS Grid with 4 equal columns */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 440px;
+  margin: 0 auto 22px;
+  perspective: 900px; /* gives the 3D depth for the flip */
+}
+
+/* Each card is a button so it works with keyboard too */
+.card {
+  aspect-ratio: 3 / 4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* JavaScript adds the class "flipped" to turn the card */
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backface-visibility: hidden; /* hides the side facing away */
+}
+
+.card-back {
+  background: var(--card-back);
+  color: #fff;
+  border: 3px solid #fff4;
+}
+
+.card-front {
+  background: var(--card-front);
+  transform: rotateY(180deg);
+}
+
+.card:not(.flipped):hover .card-inner {
+  transform: translateY(-4px);
+}
+
+/* JavaScript adds "matched" when a pair is found */
+.card.matched .card-front {
+  background: #b9f6ca;
+  animation: pop 0.5s;
+}
+
+@keyframes pop {
+  50% { transform: rotateY(180deg) scale(1.15); }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Win message (overlay), hidden by default */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 4, 25, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.win-box {
+  background: var(--panel);
+  border: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 30px;
+  text-align: center;
+  max-width: 340px;
+}
+
+.win-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.win-box p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   RESPONSIVE: small screens (media query)
+   ========================================================= */
+@media (max-width: 480px) {
+  header { padding: 12px 16px; }
+  .board { gap: 8px; }
+  .card { font-size: 1.5rem; }
+  .preview span { width: 48px; height: 64px; font-size: 1.5rem; }
+}
+
+/* Respect users who turn off animations */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
 }

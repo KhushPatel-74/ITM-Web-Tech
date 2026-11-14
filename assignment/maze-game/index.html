@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Maze Runner</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memory Match - a card matching game">
+  <title>Memory Match | Main Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <main class="start-screen">
-        <p class="arcade-label">Retro Arcade</p>
-        <h1>Maze Runner</h1>
-        <p class="tagline">Can you become the Maze Runner?</p>
-    
-         <div class="menu">
-            <h2>Ready Player 1?</h2>
-            <button id="start-button">START GAME</button>
-            <p class="high-score">Best score : 00000</p>
-        </div>
-    </main>
+
+  <header>
+    <a class="logo" href="index.html">Memory Match</a>
+    <nav>
+      <a class="btn ghost" href="game.html">Play</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section: title + Start Game button -->
+    <section class="hero">
+      <div class="preview" aria-hidden="true">
+        <span>🚀</span><span>?</span><span>🍕</span><span>?</span><span>🎮</span>
+      </div>
+      <h1>Memory Match</h1>
+      <p>Flip the cards, remember where they are and find all 8 pairs in the fewest moves.</p>
+      <!-- This link opens the game page in the same tab -->
+      <a class="btn" href="game.html">Start Game</a>
+    </section>
+
+    <!-- How to play -->
+    <section class="rules">
+      <h2>How to play</h2>
+      <ol>
+        <li>Click a card to flip it.</li>
+        <li>Click a second card to look for its pair.</li>
+        <li>Same emoji? The pair stays open.</li>
+        <li>Different? Both cards flip back, so remember them.</li>
+        <li>Match all 8 pairs to win.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with HTML, CSS and JavaScript</p>
+  </footer>
+
 </body>
 </html>
