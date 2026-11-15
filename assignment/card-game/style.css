@@ -1,8 +1,4 @@
-/* =========================================================
-   MEMORY MATCH - style.css (shared by index.html and game.html)
-   ========================================================= */
 
-/* 1. CSS VARIABLES: change the theme from one place */
 :root {
   --bg: #1b1033;
   --panel: #2a1a4d;
@@ -13,7 +9,7 @@
   --radius: 14px;
 }
 
-/* 2. RESET + BASE */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,7 +25,7 @@ body {
   flex-direction: column;
 }
 
-/* 3. HEADER + FOOTER (Flexbox) */
+
 header,
 footer {
   display: flex;
@@ -56,7 +52,7 @@ main {
   padding: 20px;
 }
 
-/* 4. BUTTONS (shared by links and <button>) */
+
 .btn {
   display: inline-block;
   background: var(--accent);
@@ -88,9 +84,7 @@ main {
   outline-offset: 3px;
 }
 
-/* =========================================================
-   HOME PAGE (index.html)
-   ========================================================= */
+
 .hero {
   text-align: center;
   max-width: 640px;
@@ -98,7 +92,7 @@ main {
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 8vw, 4rem); /* responsive font size */
+  font-size: clamp(2.4rem, 8vw, 4rem); 
   line-height: 1.1;
   margin-bottom: 14px;
 }
@@ -109,7 +103,7 @@ main {
   opacity: 0.9;
 }
 
-/* Floating preview cards on the menu */
+
 .preview {
   display: flex;
   justify-content: center;
@@ -139,7 +133,7 @@ main {
   50% { transform: translateY(-12px) rotate(4deg); }
 }
 
-/* How to play box */
+
 .rules {
   max-width: 520px;
   margin: 0 auto;
@@ -158,9 +152,7 @@ main {
   line-height: 1.8;
 }
 
-/* =========================================================
-   GAME PAGE (game.html)
-   ========================================================= */
+
 .scoreboard {
   display: flex;
   justify-content: center;
@@ -187,7 +179,7 @@ main {
   color: var(--accent);
 }
 
-/* The board: CSS Grid with 4 equal columns */
+
 .board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -197,7 +189,7 @@ main {
   perspective: 900px; /* gives the 3D depth for the flip */
 }
 
-/* Each card is a button so it works with keyboard too */
+
 .card {
   aspect-ratio: 3 / 4;
   background: none;
@@ -214,7 +206,7 @@ main {
   transition: transform 0.5s;
 }
 
-/* JavaScript adds the class "flipped" to turn the card */
+
 .card.flipped .card-inner {
   transform: rotateY(180deg);
 }
@@ -245,7 +237,7 @@ main {
   transform: translateY(-4px);
 }
 
-/* JavaScript adds "matched" when a pair is found */
+
 .card.matched .card-front {
   background: #b9f6ca;
   animation: pop 0.5s;
@@ -261,7 +253,7 @@ main {
   gap: 12px;
 }
 
-/* Win message (overlay), hidden by default */
+
 .overlay {
   position: fixed;
   inset: 0;
@@ -295,9 +287,7 @@ main {
   line-height: 1.6;
 }
 
-/* =========================================================
-   RESPONSIVE: small screens (media query)
-   ========================================================= */
+
 @media (max-width: 480px) {
   header { padding: 12px 16px; }
   .board { gap: 8px; }
@@ -305,7 +295,7 @@ main {
   .preview span { width: 48px; height: 64px; font-size: 1.5rem; }
 }
 
-/* Respect users who turn off animations */
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }

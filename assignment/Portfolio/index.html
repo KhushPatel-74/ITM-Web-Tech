@@ -1,54 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khush Patel | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khush Patel | Portfolio</title>
+  <meta name="description" content="Portfolio of Khush Patel, a first-year B.Tech CSE student at ITM (SLS) Baroda University, with Web Technologies practicals in HTML, CSS and JavaScript.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bar">
-        <a class="logo" href="#home">Khush Patel</a>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
 
-        </nav>
-    </header>
-    <main>
-        <section class="hero" id="home">
-            <div class="herotext">
-            <h1>Khush<br>Patel</h1>
-            </div>
-            <div class="quasar">
-                <i class="jet up"></i>
-                <i class="jet down"></i>
-                <i class="disc"></i>
-                <i class="core"></i>
-                
-            </div>
+  <!-- Scroll progress bar -->
+  <div id="progress"></div>
 
-        </section>
-        <section class="sec" id="about">
-            <h2>About</h2>
-            <p>...</p>
-        </section>
-        <section class="sec" id="skills">
-            <h2>Skills</h2>
-            <p>...</p>
-        </section>
-        <section class="sec" id="projects">
-            <h2>Projects</h2>
-        </section>
-        <section class="sec" id="contact">
-            <h2>Contact</h2>
-            <p>...</p>
-        </section>
-    </main>
+  <!-- Header -->
+  <header>
+    <a class="logo" href="#home">Khush<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#game">Game</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn">Theme: teal</button>
+  </header>
 
-   <script src="script.js"></script> 
+  <!-- Home -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <p class="hello" id="greeting">Hello</p>
+      <h1>Hi, I am <span>Khush Patel</span></h1>
+      <p class="role">First-year B.Tech Computer Science and Engineering (Core) student at ITM (SLS) Baroda University. I build web pages and write programs.</p>
+      <div class="buttons">
+        <a class="btn" href="#projects">View my work</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b class="count" data-target="10">0</b><span>Practicals done</span></div>
+        <div class="stat"><b class="count" data-target="6">0</b><span>Languages learned</span></div>
+        <div class="stat"><b class="count" data-target="3">0</b><span>Languages learning</span></div>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="window">
+        <div class="dots"><span></span><span></span><span></span></div>
+<pre><code><span class="tag-c">&lt;h1&gt;</span>Hi, I am Khush<span class="tag-c">&lt;/h1&gt;</span>
+
+<span class="sel">h1</span> {
+  <span class="prop">color</span>: <span class="val">teal</span>;
+}
+
+<span class="kw">console</span>.log(<span class="val">"Hello!"</span>);<i class="cursor"></i></code></pre>
+      </div>
+      <span class="badge b1">HTML</span>
+      <span class="badge b2">CSS</span>
+      <span class="badge b3">JS</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="white" id="about">
+    <div class="container">
+      <h2>About me</h2>
+      <p class="subtitle">A little about who I am and what I study.</p>
+      <div class="about">
+        <div class="about-text">
+          <p>I am a first-year B.Tech Computer Science and Engineering (Core) student at ITM (SLS) Baroda University. This semester I learned to build web pages with HTML and CSS, add interactivity with JavaScript and write programs in Python.</p>
+          <p>I enjoy making things look good and working out how they work behind the scenes. I am now learning C, C++ and Java, and this portfolio shows what I have built so far.</p>
+        </div>
+        <div class="info-grid">
+          <div class="info"><span>Programme</span><b>B.Tech CSE (Core)</b></div>
+          <div class="info"><span>University</span><b>ITM (SLS) Baroda University</b></div>
+          <div class="info"><span>Course</span><b>Web Technologies (C2111C3)</b></div>
+          <div class="info"><span>Semester</span><b>1</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p class="subtitle">The languages I have learned and the ones I am learning now.</p>
+      <div class="skill-grid">
+        <div class="skill-box">
+          <h3>What I have learned</h3>
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">PHP</span>
+          <span class="chip">XML</span>
+        </div>
+        <div class="skill-box">
+          <h3>What I am learning</h3>
+          <span class="chip learning">C</span>
+          <span class="chip learning">C++</span>
+          <span class="chip learning">Java</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="white" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="subtitle">My first ten Web Technologies practicals. Choose a language to filter them.</p>
+
+      <div class="filters">
+        <button class="active" data-type="all">All</button>
+        <button data-type="html">HTML</button>
+        <button data-type="css">CSS</button>
+        <button data-type="js">JavaScript</button>
+      </div>
+
+      <div class="grid">
+        <div class="card" data-type="html">
+          <div class="number">1</div>
+          <h3>Practical 1</h3>
+          <p>Add a short description of this practical.</p>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card" data-type="html">
+          <div class="number">2</div>
+          <h3>Practical 2</h3>
+          <p>Add a short description of this practical.</p>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card" data-type="html">
+          <div class="number">3</div>
+          <h3>Practical 3</h3>
+          <p>Add a short description of this practical.</p>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card" data-type="html">
+          <div class="number">4</div>
+          <h3>Practical 4</h3>
+          <p>Add a short description of this practical.</p>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card" data-type="html">
+          <div class="number">5</div>
+          <h3>Practical 5</h3>
+          <p>Add a short description of this practical.</p>
+          <span class="tag">HTML</span>
+        </div>
+        <div class="card" data-type="html css">
+          <div class="number">6</div>
+          <h3>Student Bookstore Survey</h3>
+          <p>A survey form for a student bookstore.</p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="card" data-type="html css">
+          <div class="number">7</div>
+          <h3>Real Madrid Soccer Site</h3>
+          <p>A two-frame website in the club's colours.</p>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="card" data-type="js">
+          <div class="number">8</div>
+          <h3>Arithmetic in JavaScript</h3>
+          <p>Arithmetic performed by a script.</p>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="card" data-type="js">
+          <div class="number">9</div>
+          <h3>Text Grow and Shrink</h3>
+          <p>Buttons that make text bigger or smaller.</p>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="card" data-type="js">
+          <div class="number">10</div>
+          <h3>Show or Hide Password</h3>
+          <p>A toggle that reveals a password field.</p>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="repo">
+        <p>All the source code is in my public Web Technologies repository on GitHub.</p>
+        <a class="btn" href="https://github.com/YOUR-USERNAME/YOUR-REPO-NAME" target="_blank">Open the repository</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured game -->
+  <section id="game">
+    <div class="container">
+      <h2>Featured game</h2>
+      <p class="subtitle">A project I built for my Web Technologies viva.</p>
+      <div class="game">
+        <div class="preview">
+          <div class="mini">?</div>
+          <div class="mini open">A</div>
+          <div class="mini">?</div>
+          <div class="mini open">B</div>
+          <div class="mini open">A</div>
+          <div class="mini">?</div>
+          <div class="mini open">B</div>
+          <div class="mini">?</div>
+        </div>
+        <div>
+          <h3>Memory Match</h3>
+          <p>A card game where you flip cards to find matching pairs. It has two pages: a main menu with a Start Game button, and the game page itself.</p>
+          <p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </p>
+          <a class="btn" href="game/index.html">Play the game</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey timeline -->
+  <section class="white" id="journey">
+    <div class="container">
+      <h2>My journey</h2>
+      <p class="subtitle">How my first semester has gone so far.</p>
+      <div class="timeline">
+        <div class="step">
+          <h3>Started B.Tech CSE (Core)</h3>
+          <p>Joined ITM (SLS) Baroda University to study Computer Science and Engineering.</p>
+        </div>
+        <div class="step">
+          <h3>Learned the web basics</h3>
+          <p>Built pages with HTML and CSS and added behaviour with JavaScript in Web Technologies (C2111C3).</p>
+        </div>
+        <div class="step">
+          <h3>Finished ten practicals</h3>
+          <p>Worked through the first ten lab practicals and kept the code in my public GitHub repository.</p>
+        </div>
+        <div class="step">
+          <h3>Learning more languages</h3>
+          <p>Now learning C, C++ and Java, and building this portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <p class="subtitle">Courses and achievements. Replace these with your own, or delete this section.</p>
+      <div class="cert-grid">
+        <div class="cert">
+          <h3>Your certificate name</h3>
+          <p>Issued by your organisation</p>
+          <span class="tag">Year</span>
+        </div>
+        <div class="cert">
+          <h3>Your certificate name</h3>
+          <p>Issued by your organisation</p>
+          <span class="tag">Year</span>
+        </div>
+        <div class="cert">
+          <h3>Your certificate name</h3>
+          <p>Issued by your organisation</p>
+          <span class="tag">Year</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beyond code -->
+  <section class="white" id="beyond">
+    <div class="container">
+      <h2>Beyond code</h2>
+      <p class="subtitle">What I enjoy when I am not coding.</p>
+      <div class="tiles">
+        <div class="tile games">
+          <h3>Games</h3>
+          <p>Hollow Knight is my favourite game.</p>
+        </div>
+        <div class="tile space">
+          <h3>Astronomy</h3>
+          <p>I love nebulas and quasars.</p>
+        </div>
+        <div class="tile planes">
+          <h3>Aviation</h3>
+          <p>I like fighter jets such as the MiG-29 and the Su-30.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container center">
+      <h2>Contact</h2>
+      <p class="subtitle">Feel free to get in touch about web development or my practicals.</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:YOUR-EMAIL@example.com">Email</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Khush Patel, B.Tech CSE (Core), ITM (SLS) Baroda University</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <a id="toTop" href="#home">&#8593;</a>
+
+  <script src="script.js"></script>
 </body>
 </html>

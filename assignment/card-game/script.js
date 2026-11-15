@@ -1,6 +1,4 @@
-// =========================================================
-// MEMORY MATCH - script.js (beginner friendly)
-// =========================================================
+
 
 // 1. DATA: 8 emojis. We need 2 of each, so we join the array with itself.
 var emojis = ["🍎", "🚀", "🐱", "⚽", "🎧", "🌈", "🍕", "🎮"];
