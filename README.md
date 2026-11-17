@@ -1,6 +1,6 @@
 # ITM Web Technologies
 
-Practicals, unit notes and the course assignment for the **Web Technologies** subject.
+Practicals, unit notes and course assignments for the **Web Technologies** subject.
 
 **Author:** Khush Patel
 **Course:** B.Tech CSE, ITM (SLS) Baroda University
@@ -9,8 +9,9 @@ Practicals, unit notes and the course assignment for the **Web Technologies** su
 
 ```
 ITM-Web-Tech/
-├── assignment/       # Course assignment: a browser game built with HTML, CSS and JavaScript
-│   └── maze-game/
+├── assignment/       # Course assignments built with HTML, CSS and JavaScript
+│   ├── card-game/    # Browser card game
+│   └── Portfolio/    # Personal portfolio website
 ├── practicals/       # Practical work (HTML, CSS, JavaScript) with reports as .docx and .pdf
 │   ├── practical-01/ ... practical-10/
 │   ├── html-tags/
@@ -21,7 +22,7 @@ ITM-Web-Tech/
 
 | Folder | What it has | Details |
 |--------|-------------|---------|
-| [`assignment/`](assignment/) | The web game assignment (maze game) | [assignment/README.md](assignment/README.md) |
+| [`assignment/`](assignment/) | Card game and personal portfolio website | [assignment/README.md](assignment/README.md) |
 | [`practicals/`](practicals/) | 10 numbered practicals plus two extra mini-projects | [practicals/README.md](practicals/README.md) |
 | [`unit-notes/`](unit-notes/) | Unit notes (PDF) and demo pages | [unit-notes/README.md](unit-notes/README.md) |
 
